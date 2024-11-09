@@ -1,0 +1,189 @@
+/* index.css */
+@import 'animate.css';
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f3f3f3;
+  overflow-x: hidden;
+}
+.home-page{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 80vh;
+}
+.middle-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.header{
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:3rem;
+}
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  height:3rem;
+}
+
+.header nav a {
+  margin: 0 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.header nav a:hover {
+  text-decoration: underline;
+}
+
+.birthday-page {
+  position: relative;
+  color: white;
+  text-align: center;
+  padding: 60px;
+  z-index: 10;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-size: cover;
+}
+
+.content h1 {
+  font-size: 3rem;
+  margin-top: 40px;
+  animation: fadeInUp 2s;
+}
+
+.content p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  animation: fadeInUp 3s;
+}
+
+.cake-img {
+  width: 250px;
+  margin: 20px;
+  animation: zoomIn 1.5s ease;
+}
+
+.decorations span {
+  font-size: 2.5rem;
+  margin: 0 15px;
+  animation: swing 3s infinite;
+}
+
+/* Button Animation */
+.wish-btn {
+  background-color: #ff6f61;
+  padding: 15px 30px;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.wish-btn:hover {
+  background-color: #ff4757;
+  transform: scale(1.1);
+}
+
+/* Contact Page Styles */
+.contact-page {
+  padding: 50px;
+  text-align: center;
+  background-color: #ff6f61;
+  color: white;
+}
+
+.contact-page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}  
+/* Container for centering the card */
+.tilt-card-content{
+  border:5px solid white;
+  transform: rotateY(25deg) rotateX(15deg);
+}
+.tilt-card-content img{
+  width: 100%;
+  height: 100%;
+}
+.wish-qu{
+text-align: center;
+margin: 2px;
+font-size: 2.2rem;
+font-weight: 700;
+background: linear-gradient(to top, red, yellow);
+-webkit-background-clip: text;
+background-clip: text;
+color: transparent;
+}
+.wishqutoes{
+  text-align: center;
+  font-size: 1.2rem;
+font-weight: 700;
+background: radial-gradient(circle, rgb(255, 0, 106), rgb(0, 76, 255));
+-webkit-background-clip: text;
+background-clip: text;
+color: transparent;
+}
+.fell{
+  text-align: center;
+  font-size: 1.2rem;
+font-weight: 700;
+
+}
+.contact-page{  
+  height: 74vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url('./Components/image/ballon.jpeg');
+background-position:center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.name{
+  font-size: 2rem;
+  background: radial-gradient(circle, rgb(255, 21, 0), rgb(255, 102, 0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+@media (max-width: 768px) {
+  .background-video {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain; /* Ensure the video is contained within the screen */
+  }
+  .tilt-card-container{
+    display: none;
+  }
+}
